@@ -3,7 +3,7 @@ import { extractValidationData } from "./../../common/utils/extract-error-data.j
 
 const repairSchema = z.object({
   date: z.string(),
-  motorsNumber: z.number(),
+  motorsNumber: z.string(),
   description: z.string().min(10),
   userId: z.number(),
 });
